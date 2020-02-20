@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using Lab2.Software;
@@ -15,6 +16,7 @@ namespace Lab2.Input
         /// <returns>Экземпляр класса ASoftware полученный из заданной строки</returns>
         public static ASoftware ParseSoftware<T>(string software) where T : ASoftware
         {
+            Trace.WriteLine($"ParseSoftware");
             var stream = new MemoryStream();
             var writer = new StreamWriter(stream);
             writer.Write(software);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Runtime.Serialization;
 
 namespace Lab2.Software
@@ -15,11 +16,13 @@ namespace Lab2.Software
 
         public override bool IsActive(DateTime date)
         {
+            Trace.WriteLine($"FreeSoftware: IsActive");
             return true;
         }
 
         public override bool IsActive()
         {
+            Trace.WriteLine($"FreeSoftware: IsActive for current date");
             return true;
         }
     }

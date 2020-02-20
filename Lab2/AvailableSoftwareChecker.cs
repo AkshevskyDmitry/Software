@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using Lab2.Software;
 
@@ -14,6 +15,7 @@ namespace Lab2
         /// <returns>Массив доступных ПО на данную дату</returns>
         public static ASoftware[] CheckSoftware(ASoftware[] softwares, DateTime date)
         {
+            Trace.WriteLine($"CheckSoftware");
             return softwares.Where(software => software.IsActive()).ToArray();
         }
         
@@ -24,6 +26,7 @@ namespace Lab2
         /// <returns>Массив доступных ПО на данную дату</returns>
         public static ASoftware[] CheckSoftware(ASoftware[] softwares)
         {
+            Trace.WriteLine($"CheckSoftware for current date");
             return CheckSoftware(softwares, DateTime.Today);
         }
     }

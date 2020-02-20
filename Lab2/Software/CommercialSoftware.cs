@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Runtime.Serialization;
 
 namespace Lab2.Software
@@ -41,15 +42,18 @@ namespace Lab2.Software
 
         public override void PrintInfo()
         {
+            Trace.WriteLine($"CommercialSoftware: PrintInfo");
             Console.WriteLine($"{Company}: {Name} Installed: {InstallationDate.ToShortDateString()} Usage period: {UsagePeriod} days Price: {Price}$");
         }
         public override bool IsActive(DateTime date)
         {
+            Trace.WriteLine($"CommercialSoftware: IsActive");
             return InstallationDate.AddDays(UsagePeriod) > date;
         }
 
         public override bool IsActive()
         {
+            Trace.WriteLine($"CommercialSoftware: IsActive for current date");
             return IsActive(DateTime.Today);
         }
     }
