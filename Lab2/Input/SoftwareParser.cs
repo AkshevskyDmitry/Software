@@ -7,6 +7,12 @@ namespace Lab2.Input
 {
     public static class SoftwareParser
     {
+        /// <summary>
+        /// Создание объекта типа Software из JSON строки
+        /// </summary>
+        /// <param name="software">JSON строка с описанием параметров класса</param>
+        /// <typeparam name="T">Тип программного обеспечения</typeparam>
+        /// <returns>Экземпляр класса ASoftware полученный из заданной строки</returns>
         public static ASoftware ParseSoftware<T>(string software) where T : ASoftware
         {
             var stream = new MemoryStream();

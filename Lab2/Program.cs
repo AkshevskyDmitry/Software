@@ -5,7 +5,7 @@ using Lab2.Input;
 
 namespace Lab2
 {
-    partial class Program
+    static class Program
     {
         static void Main(string[] args)
         {

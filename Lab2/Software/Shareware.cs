@@ -3,11 +3,21 @@ using System.Runtime.Serialization;
 
 namespace Lab2.Software
 {
+    /// <summary>
+    /// Описание Условно-Бесплатного ПО
+    /// </summary>
     [DataContract]
     public class Shareware: ASoftware
     {
+        /// <summary>
+        /// Дата установки ПО
+        /// </summary>
         [DataMember]
         public DateTime InstallationDate;
+        
+        /// <summary>
+        /// Период бесплатного использования в днях
+        /// </summary>
         [DataMember]
         public int FreePeriod; 
         

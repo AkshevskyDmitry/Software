@@ -3,13 +3,27 @@ using System.Runtime.Serialization;
 
 namespace Lab2.Software
 {
+    /// <summary>
+    /// Описание Комерческого ПО
+    /// </summary>
     [DataContract]
     public class CommercialSoftware: ASoftware
     {
+        /// <summary>
+        /// Дата установки ПО
+        /// </summary>
         [DataMember]
         public DateTime InstallationDate;
+        
+        /// <summary>
+        /// Срок использования в днях
+        /// </summary>
         [DataMember]
         public int UsagePeriod;
+        
+        /// <summary>
+        /// Стоимость ПО в долларах
+        /// </summary>
         [DataMember]
         public int Price;
         

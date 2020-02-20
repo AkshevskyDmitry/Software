@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace Lab2.Software
 {
+    /// <summary>
+    /// Описание бесплатного ПО
+    /// </summary>
     [DataContract]
     public class FreeSoftware: ASoftware
     {
