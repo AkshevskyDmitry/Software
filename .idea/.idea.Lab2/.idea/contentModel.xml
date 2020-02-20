@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mikl1\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\mikl1\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\mikl1\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mikl1\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Lab2.-386719670.00" t="ExcludeRecursive" />
+    <e p="S:\Lessons\6\Prog\Lab2" t="IncludeFlat">
+      <e p="Lab2" t="IncludeRecursive">
+        <e p="AvailableSoftwareChecker.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Data" t="Include">
+          <e p="input.txt" t="Include" />
+        </e>
+        <e p="Input" t="Include">
+          <e p="SoftwareParser.cs" t="Include" />
+        </e>
+        <e p="Lab2.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Lab2.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Software" t="Include">
+          <e p="ASoftware.cs" t="Include" />
+          <e p="CommercialSoftware.cs" t="Include" />
+          <e p="FreeSoftware.cs" t="Include" />
+          <e p="Shareware.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Lab2.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
