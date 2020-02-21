@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace Lab2.Software
 {
@@ -8,19 +9,26 @@ namespace Lab2.Software
     /// Описание Условно-Бесплатного ПО
     /// </summary>
     [DataContract]
+    [XmlRoot]
     public class Shareware: ASoftware
     {
         /// <summary>
         /// Дата установки ПО
         /// </summary>
         [DataMember]
+        [XmlElement(DataType = "date")]
         public DateTime InstallationDate;
         
         /// <summary>
         /// Период бесплатного использования в днях
         /// </summary>
         [DataMember]
-        public int FreePeriod; 
+        [XmlElement]
+        public int FreePeriod;
+
+        private Shareware()
+        {
+        }
         
         public Shareware(string name, string company, DateTime installDate, int freePeriod) : base(name, company)
         {

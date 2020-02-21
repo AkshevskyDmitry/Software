@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace Lab2.Software
 {
@@ -8,19 +9,26 @@ namespace Lab2.Software
     /// Описание ПО
     /// </summary>
     [DataContract]
+    [XmlRoot]
     public abstract class ASoftware
     {
         /// <summary>
         /// Название ПО
         /// </summary>
         [DataMember]
+        [XmlElement]
         public string Name;
         
         /// <summary>
         /// Компания произовдитель 
         /// </summary>
         [DataMember]
-        public readonly string Company;
+        [XmlElement]
+        public string Company;
+
+        internal ASoftware()
+        {
+        }
 
         public ASoftware(string name, string company)
         {

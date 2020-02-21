@@ -12,9 +12,6 @@
         <e p="Data" t="Include">
           <e p="input.txt" t="Include" />
         </e>
-        <e p="Input" t="Include">
-          <e p="SoftwareParser.cs" t="Include" />
-        </e>
         <e p="Lab2.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -29,6 +26,16 @@
           <e p="CommercialSoftware.cs" t="Include" />
           <e p="FreeSoftware.cs" t="Include" />
           <e p="Shareware.cs" t="Include" />
+        </e>
+        <e p="SoftwareFillers" t="Include">
+          <e p="XmlFiller.cs" t="Include" />
+        </e>
+        <e p="SoftwareParsers" t="Include">
+          <e p="Interfaces" t="Include">
+            <e p="ISoftwareParser.cs" t="Include" />
+          </e>
+          <e p="JsonSoftwareParser.cs" t="Include" />
+          <e p="XmlParser.cs" t="Include" />
         </e>
       </e>
       <e p="Lab2.sln" t="IncludeFlat" />

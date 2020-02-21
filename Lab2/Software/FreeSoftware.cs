@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace Lab2.Software
 {
@@ -8,8 +9,13 @@ namespace Lab2.Software
     /// Описание бесплатного ПО
     /// </summary>
     [DataContract]
+    [XmlRoot]
     public class FreeSoftware: ASoftware
     {
+        private FreeSoftware()
+        {
+        }
+        
         public FreeSoftware(string name, string company) : base(name, company)
         {
         }

@@ -6,7 +6,7 @@ using Lab2.Software;
 
 namespace Lab2.Input
 {
-    public static class SoftwareParser
+    public class JsonSoftwareParser : ISoftwareParser
     {
         /// <summary>
         /// Создание объекта типа Software из JSON строки
@@ -14,9 +14,9 @@ namespace Lab2.Input
         /// <param name="software">JSON строка с описанием параметров класса</param>
         /// <typeparam name="T">Тип программного обеспечения</typeparam>
         /// <returns>Экземпляр класса ASoftware полученный из заданной строки</returns>
-        public static ASoftware ParseSoftware<T>(string software) where T : ASoftware
+        public ASoftware ParseSoftware<T>(string software) where T : ASoftware
         {
-            Trace.WriteLine($"ParseSoftware");
+            Trace.WriteLine($"ParseSoftwareFromJSON");
             var stream = new MemoryStream();
             var writer = new StreamWriter(stream);
             writer.Write(software);
